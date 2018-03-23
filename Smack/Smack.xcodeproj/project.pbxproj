@@ -18,6 +18,7 @@
 		FA24FE4420651D3F007A0787 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE4320651D3F007A0787 /* SWRevealViewController.m */; };
 		FA24FE4620652498007A0787 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE4520652498007A0787 /* GradientView.swift */; };
 		FA8111042065ABB70002EE04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8111032065ABB70002EE04 /* LoginViewController.swift */; };
+		FAD1BB8D2065BE78009EE747 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1BB8C2065BE78009EE747 /* CreateAccountVC.swift */; };
 		FAF29D412065972100A56EED /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF29D402065972100A56EED /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		FA24FE4320651D3F007A0787 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FA24FE4520652498007A0787 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		FA8111032065ABB70002EE04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAD1BB8C2065BE78009EE747 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		FAF29D402065972100A56EED /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = Smack/Utilities/LoginVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				FA24FE32206513DA007A0787 /* ChatVC.swift */,
 				FA24FE34206513EA007A0787 /* ChannelVC.swift */,
 				FA8111032065ABB70002EE04 /* LoginViewController.swift */,
+				FAD1BB8C2065BE78009EE747 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				FAF29D412065972100A56EED /* LoginVC.swift in Sources */,
 				FA24FE4620652498007A0787 /* GradientView.swift in Sources */,
 				FA8111042065ABB70002EE04 /* LoginViewController.swift in Sources */,
+				FAD1BB8D2065BE78009EE747 /* CreateAccountVC.swift in Sources */,
 				FA224B9E206465070051A567 /* AppDelegate.swift in Sources */,
 				FA1A53D92065918D006833B2 /* Constants.swift in Sources */,
 				FA24FE4420651D3F007A0787 /* SWRevealViewController.m in Sources */,
