@@ -15,6 +15,7 @@
 		FA24FE33206513DA007A0787 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE32206513DA007A0787 /* ChatVC.swift */; };
 		FA24FE35206513EA007A0787 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE34206513EA007A0787 /* ChannelVC.swift */; };
 		FA24FE4420651D3F007A0787 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE4320651D3F007A0787 /* SWRevealViewController.m */; };
+		FA24FE4620652498007A0787 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE4520652498007A0787 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FA24FE4120651D3E007A0787 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA24FE4220651D3F007A0787 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FA24FE4320651D3F007A0787 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FA24FE4520652498007A0787 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		FA24FE312065132C007A0787 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA24FE4520652498007A0787 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				FA24FE35206513EA007A0787 /* ChannelVC.swift in Sources */,
 				FA24FE33206513DA007A0787 /* ChatVC.swift in Sources */,
+				FA24FE4620652498007A0787 /* GradientView.swift in Sources */,
 				FA224B9E206465070051A567 /* AppDelegate.swift in Sources */,
 				FA24FE4420651D3F007A0787 /* SWRevealViewController.m in Sources */,
 			);
