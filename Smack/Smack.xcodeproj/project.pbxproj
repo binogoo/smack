@@ -18,6 +18,7 @@
 		FA24FE4420651D3F007A0787 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE4320651D3F007A0787 /* SWRevealViewController.m */; };
 		FA24FE4620652498007A0787 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE4520652498007A0787 /* GradientView.swift */; };
 		FA8111042065ABB70002EE04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8111032065ABB70002EE04 /* LoginViewController.swift */; };
+		FAC7D58D20684E70006045B0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7D58C20684E70006045B0 /* AuthService.swift */; };
 		FAD1BB8D2065BE78009EE747 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD1BB8C2065BE78009EE747 /* CreateAccountVC.swift */; };
 		FAF29D412065972100A56EED /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF29D402065972100A56EED /* LoginVC.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		FA24FE4320651D3F007A0787 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FA24FE4520652498007A0787 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		FA8111032065ABB70002EE04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAC7D58C20684E70006045B0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FAD1BB8C2065BE78009EE747 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		FAF29D402065972100A56EED /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = Smack/Utilities/LoginVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 		FA224B9C206465070051A567 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				FAC7D58B20684E59006045B0 /* Services */,
 				FA1A53D72065916E006833B2 /* Utilities */,
 				FA24FE3A20651C01007A0787 /* Support_Files */,
 				FA24FE312065132C007A0787 /* View */,
@@ -151,6 +154,14 @@
 				FA24FE4120651D3E007A0787 /* Smack-Bridging-Header.h */,
 			);
 			path = Support_Files;
+			sourceTree = "<group>";
+		};
+		FAC7D58B20684E59006045B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7D58C20684E70006045B0 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				FA8111042065ABB70002EE04 /* LoginViewController.swift in Sources */,
 				FAD1BB8D2065BE78009EE747 /* CreateAccountVC.swift in Sources */,
 				FA224B9E206465070051A567 /* AppDelegate.swift in Sources */,
+				FAC7D58D20684E70006045B0 /* AuthService.swift in Sources */,
 				FA1A53D92065918D006833B2 /* Constants.swift in Sources */,
 				FA24FE4420651D3F007A0787 /* SWRevealViewController.m in Sources */,
 			);
