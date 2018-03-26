@@ -43,7 +43,12 @@ class CreateAccountVC: UIViewController {
         AuthService.instance.registerUser(email: email, password: password) { (response) in
             if response {
                 print("Registered user!")
-                self.performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
+                AuthService.instance.loginUser(email: email, password: password, completion: { (response) in
+                    if response {
+                        print("Logged in user! ", AuthService.instance.authToken)
+                        self.performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
+                    }
+                })
             }
         }
         
