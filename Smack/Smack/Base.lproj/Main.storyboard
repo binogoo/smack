@@ -233,7 +233,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbv-SW-acG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbv-SW-acG" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="310" width="250" height="40"/>
                                 <color key="backgroundColor" red="0.21227318048477173" green="0.65364575386047363" blue="0.84782141447067261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -244,6 +244,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onLoginButtonPressed:" destination="SOV-27-BS0" eventType="touchUpInside" id="dUj-ia-4fm"/>
                                 </connections>
@@ -368,7 +373,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vaw-9L-jsM">
                                         <rect key="frame" x="0.0" y="129" width="250" height="2"/>
@@ -380,7 +385,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeN-Z7-tne">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeN-Z7-tne" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="607" width="250" height="40"/>
                                 <color key="backgroundColor" red="0.21227318049999999" green="0.65364575390000001" blue="0.84782141450000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -391,6 +396,11 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onCreateAccountPressed:" destination="ycA-lP-Jr3" eventType="touchUpInside" id="ooj-iZ-WwB"/>
                                     <action selector="onLoginButtonPressed:" destination="SOV-27-BS0" eventType="touchUpInside" id="bL2-Pf-ghU"/>
@@ -406,6 +416,7 @@
                                     <color key="titleColor" red="0.21227318049999999" green="0.65364575390000001" blue="0.84782141450000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="onChooseAvatarPressed:" destination="ycA-lP-Jr3" eventType="touchUpInside" id="Xel-Wp-pcJ"/>
                                     <action selector="onCreateAccountButtonPressed:" destination="SOV-27-BS0" eventType="touchUpInside" id="ufA-E3-7Na"/>
                                 </connections>
                             </button>
@@ -428,6 +439,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onCreateAccountButtonPressed:" destination="SOV-27-BS0" eventType="touchUpInside" id="2bD-Nj-NUc"/>
+                                    <action selector="onGenerateBGColorPressed:" destination="ycA-lP-Jr3" eventType="touchUpInside" id="lsy-b8-Ug4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -451,6 +463,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="PaN-Qt-izL" id="UC5-JX-XQM"/>
+                        <outlet property="passwordText" destination="pi2-JL-uDg" id="c0Q-Ch-YiB"/>
+                        <outlet property="profileImage" destination="rFu-Vd-aHf" id="vgU-5Z-gt3"/>
+                        <outlet property="usernameText" destination="04w-yw-iJM" id="1OY-YN-1Wn"/>
                         <segue destination="PMA-LB-rv8" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSeque:" id="eLJ-Oo-aQS"/>
                     </connections>
                 </viewController>
