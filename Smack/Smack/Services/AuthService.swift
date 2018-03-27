@@ -100,10 +100,58 @@ class AuthService {
             }
         }
         
+    }
+    
+    func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler) {
+        
+        let lowerCaseEmail = email.lowercased()
+        
+        let body = [
+            "name" : name,
+            "email" : lowerCaseEmail,
+            "avatarName" : avatarName,
+            "avatarColor" : avatarColor
+        ]
+        
+        let header = [
+            "Authorization" : "Bearer \(self.authToken)",
+            "Content-Type" : "Application/json; charset=utf-8"
+        ]
+        
+        Alamofire.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
+            
+            if response.result.error == nil {
+                guard let data = response.data else { return }
+                
+                do{
+                    let json = try JSON(data: data)
+                    
+                    let id = json["_id"].stringValue
+                    let email = json["email"].stringValue
+                    let name = json["name"].stringValue
+                    let avatarColor = json["avatarColor"].stringValue
+                    let avatarName = json["avatarName"].stringValue
+                    
+                    UserDataService.instance.setUserData(id: id, name: name, email: email, avatarColor: avatarColor, avatarName: avatarName)
+                    
+                    
+                } catch {
+                    print("SwiftyJSON problem in create user: \(error)")
+                }
+                
+                
+                completion(true)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+            
+            
+        }
+        
         
         
     }
-    
     
     
 }
