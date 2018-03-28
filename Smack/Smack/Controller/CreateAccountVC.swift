@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CreateAccountVC: UIViewController {
 
     @IBOutlet weak var usernameText: UITextField!
@@ -25,11 +26,22 @@ class CreateAccountVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if UserDataService.instance.avatarName != "" {
+            profileImage.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
+        
+    }
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
     }
     
     @IBAction func onChooseAvatarPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_CHOOSE_AVATAR, sender: nil)
     }
     
     @IBAction func onGenerateBGColorPressed(_ sender: Any) {

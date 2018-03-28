@@ -16,10 +16,14 @@ let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 
+// Identifiers
+let AVATAR_CELL = "avatarCell"
+
 // Seques
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND_TO_CHANNEL = "unwindToChannel"
+let TO_CHOOSE_AVATAR = "toChooseAvatar"
 
 // User Defaults
 let TOKEN_KEY = "token"
