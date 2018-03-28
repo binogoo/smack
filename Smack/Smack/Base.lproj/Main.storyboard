@@ -12,6 +12,7 @@
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
             <string>Avenir-Heavy</string>
+            <string>Avenir-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -69,7 +70,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="KDL-uf-AR9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="KDL-uf-AR9" customClass="CircleImageView" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="16" y="567" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="A5L-b6-dsB"/>
@@ -333,8 +334,8 @@
                                             <constraint firstAttribute="height" constant="30" id="DYg-FC-Tnv"/>
                                             <constraint firstAttribute="width" constant="250" id="r2X-b3-iNe"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.2078501582" green="0.26247310639999999" blue="0.58105599880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noc-OL-Uyz">
@@ -353,9 +354,9 @@
                                             <constraint firstAttribute="height" constant="30" id="LrP-zQ-QXJ"/>
                                             <constraint firstAttribute="width" constant="250" id="hkN-9K-UdM"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <color key="textColor" red="0.2078501582" green="0.26247310639999999" blue="0.58105599880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pi-gI-T0D">
                                         <rect key="frame" x="0.0" y="83" width="250" height="2"/>
@@ -371,8 +372,8 @@
                                             <constraint firstAttribute="width" constant="250" id="KTW-Wg-UQq"/>
                                             <constraint firstAttribute="height" constant="30" id="iW1-if-qzE"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.2078501582" green="0.26247310639999999" blue="0.58105599880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vaw-9L-jsM">
@@ -420,7 +421,7 @@
                                     <action selector="onCreateAccountButtonPressed:" destination="SOV-27-BS0" eventType="touchUpInside" id="ufA-E3-7Na"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="rFu-Vd-aHf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="rFu-Vd-aHf" customClass="CircleImageView" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="309.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="r5P-z6-eqm"/>
@@ -442,10 +443,15 @@
                                     <action selector="onGenerateBGColorPressed:" destination="ycA-lP-Jr3" eventType="touchUpInside" id="lsy-b8-Ug4"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-WX-Vyk">
+                                <rect key="frame" x="169" y="275.5" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TeN-Z7-tne" firstAttribute="centerX" secondItem="YIa-Eg-FwF" secondAttribute="centerX" id="1x8-kY-kuY"/>
+                            <constraint firstItem="Nk5-WX-Vyk" firstAttribute="centerX" secondItem="YIa-Eg-FwF" secondAttribute="centerX" id="95n-Uj-AIr"/>
                             <constraint firstItem="NQY-fw-zEc" firstAttribute="top" secondItem="WXG-QY-Wyu" secondAttribute="bottom" constant="30" id="B6Z-85-XR9"/>
                             <constraint firstItem="rFu-Vd-aHf" firstAttribute="top" secondItem="NQY-fw-zEc" secondAttribute="bottom" constant="40" id="Him-SV-cWa"/>
                             <constraint firstItem="DFK-LH-jCb" firstAttribute="width" secondItem="rFu-Vd-aHf" secondAttribute="width" id="Z8D-wr-6AN"/>
@@ -456,6 +462,7 @@
                             <constraint firstItem="JPq-tr-5EV" firstAttribute="trailing" secondItem="YIa-Eg-FwF" secondAttribute="trailingMargin" id="btJ-y7-CSo"/>
                             <constraint firstItem="WXG-QY-Wyu" firstAttribute="centerX" secondItem="YIa-Eg-FwF" secondAttribute="centerX" id="iWK-vj-dGV"/>
                             <constraint firstItem="O77-2X-0Ni" firstAttribute="top" secondItem="DFK-LH-jCb" secondAttribute="bottom" id="j5w-w7-F5s"/>
+                            <constraint firstItem="Nk5-WX-Vyk" firstAttribute="centerY" secondItem="YIa-Eg-FwF" secondAttribute="centerY" constant="-40" id="kRl-xb-Azz"/>
                             <constraint firstItem="DFK-LH-jCb" firstAttribute="centerX" secondItem="YIa-Eg-FwF" secondAttribute="centerX" id="lR5-Fo-eTv"/>
                             <constraint firstItem="JPq-tr-5EV" firstAttribute="top" secondItem="fXZ-de-ueE" secondAttribute="bottom" id="mHE-WV-58H"/>
                             <constraint firstItem="NQY-fw-zEc" firstAttribute="centerX" secondItem="YIa-Eg-FwF" secondAttribute="centerX" id="th1-I4-Az0"/>
@@ -464,6 +471,7 @@
                     </view>
                     <connections>
                         <outlet property="emailText" destination="PaN-Qt-izL" id="UC5-JX-XQM"/>
+                        <outlet property="indicator" destination="Nk5-WX-Vyk" id="SxY-ZP-nmw"/>
                         <outlet property="passwordText" destination="pi2-JL-uDg" id="c0Q-Ch-YiB"/>
                         <outlet property="profileImage" destination="rFu-Vd-aHf" id="vgU-5Z-gt3"/>
                         <outlet property="usernameText" destination="04w-yw-iJM" id="1OY-YN-1Wn"/>

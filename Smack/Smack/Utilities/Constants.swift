@@ -11,13 +11,19 @@ import Foundation
 typealias CompletionHandler = (_ Success: Bool) -> ()
 
 // URL Constants
-let BASE_URL = "http://172.20.10.3:3005/v1/"
+let BASE_URL = "http://localhost:3005/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 
 // Identifiers
 let AVATAR_CELL = "avatarCell"
+
+// Colors
+let SMACK_PLACEHOLDER_COLOR = #colorLiteral(red: 0.2078501582, green: 0.2624731064, blue: 0.5810559988, alpha: 0.5)
+
+// Notifications
+let NOTIFY_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 
 // Seques
 let TO_LOGIN = "toLogin"

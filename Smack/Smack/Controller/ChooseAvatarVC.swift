@@ -37,6 +37,7 @@ class ChooseAvatarVC: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

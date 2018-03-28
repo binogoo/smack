@@ -17,6 +17,7 @@
 		FA24FE35206513EA007A0787 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE34206513EA007A0787 /* ChannelVC.swift */; };
 		FA24FE4420651D3F007A0787 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE4320651D3F007A0787 /* SWRevealViewController.m */; };
 		FA24FE4620652498007A0787 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24FE4520652498007A0787 /* GradientView.swift */; };
+		FA262887206BEE8A00731ED1 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA262886206BEE8A00731ED1 /* CircleImageView.swift */; };
 		FA324465206A5CC600F38DFF /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA324464206A5CC600F38DFF /* UserDataService.swift */; };
 		FA5BE87D206B83F5006E55C9 /* ChooseAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BE87C206B83F5006E55C9 /* ChooseAvatarVC.swift */; };
 		FA5BE87F206B8BB8006E55C9 /* AvatarCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BE87E206B8BB8006E55C9 /* AvatarCollectionCell.swift */; };
@@ -44,6 +45,7 @@
 		FA24FE4220651D3F007A0787 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FA24FE4320651D3F007A0787 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FA24FE4520652498007A0787 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		FA262886206BEE8A00731ED1 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		FA324464206A5CC600F38DFF /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		FA5BE87C206B83F5006E55C9 /* ChooseAvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAvatarVC.swift; sourceTree = "<group>"; };
 		FA5BE87E206B8BB8006E55C9 /* AvatarCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionCell.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				FA24FE4520652498007A0787 /* GradientView.swift */,
 				FA66468A2069B0EA00BB4266 /* RoundedButton.swift */,
 				FA5BE87E206B8BB8006E55C9 /* AvatarCollectionCell.swift */,
+				FA262886206BEE8A00731ED1 /* CircleImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				FA224B9E206465070051A567 /* AppDelegate.swift in Sources */,
 				FAC7D58D20684E70006045B0 /* AuthService.swift in Sources */,
 				FA1A53D92065918D006833B2 /* Constants.swift in Sources */,
+				FA262887206BEE8A00731ED1 /* CircleImageView.swift in Sources */,
 				FA24FE4420651D3F007A0787 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
