@@ -89,6 +89,7 @@ class AuthService {
                     let json = try JSON(data: data)
                     self.userEmail = json["email"].stringValue
                     self.authToken = json["token"].stringValue
+                    self.isLoggedIn = true
                 } catch {
                     print("SwiftyJSON problem in loginUser: \(error)")
                 }
